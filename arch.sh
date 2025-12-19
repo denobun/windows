@@ -17,3 +17,8 @@ systemctl enable docker
 chsh -s /usr/bin/fish
 
 curl -fsSL https://bun.sh/install | bash
+
+# Пробросить именно 0.0.0.0 порт, чтобы заходить на сайт с внешней и локальной сети
+# netsh interface portproxy add v4tov4 `
+#  listenaddress=0.0.0.0 listenport=80 `
+# connectaddress=127.0.0.1 connectport=80
