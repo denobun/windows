@@ -1,4 +1,4 @@
-pacman -Syu git openssh docker docker-compose unzip cloc fish fastfetch
+pacman -Syu git openssh docker docker-compose unzip go cloc fish fastfetch
 
 git config --global user.name "deno.bun"
 git config --global user.email "deno.bun@yandex.com"
