@@ -1,0 +1,16 @@
+{
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "icons",
+  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "chat.agent.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.check.allTargets": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.settings.applyToAllProfiles": []
+}

@@ -1,4 +1,4 @@
-pacman -Syu git openssh docker docker-compose unzip go cloc fish fastfetch
+pacman -Syu git openssh docker docker-compose unzip rustup gcc cloc fish fastfetch nano
 
 git config --global user.name "deno.bun"
 git config --global user.email "deno.bun@yandex.com"
@@ -14,13 +14,10 @@ read -r -p "### Нажми Enter, когда закончишь... " < /dev/tty
 systemctl start docker
 systemctl enable docker
 
+go install github.com/air-verse/air@latest
+
 chsh -s /usr/bin/fish
 
 curl -fsSL https://bun.sh/install | bash
 
-# Пробросить именно 0.0.0.0 порт, чтобы заходить на сайт с внешней и локальной сети.
-# Но работает через жопу - если включить правило то работает только до перезапуска, после перезапуска не работает  Localhost, LAN, WAN
-# Как я понимаю начиная надо включать MIrrored режим, а не NAT (на win10 не работает)
-# netsh interface portproxy add v4tov4 `
-#  listenaddress=0.0.0.0 listenport=80 `
-# connectaddress=127.0.0.1 connectport=80
+rustup default stable
